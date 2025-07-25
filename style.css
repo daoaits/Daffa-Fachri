@@ -310,7 +310,38 @@ span {
   font-size: 1rem;
   margin: 1rem 0 1.5rem;
 }
+.logo-container, .database, .tools {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    justify-content: flex-start;
+  }
+  .logo-container img,
+  .database img,
+  .tools img {
+    height: 44px;
+    width: auto;
+    border-radius: 12px;
+    background: #f1f5f9;
+    padding: 0.6rem;
+    transition: transform 0.2s;
+    box-shadow: 0 1px 6px 0 rgba(37,99,235,0.09);
+  }
+  .logo-container img:hover,
+  .database img:hover,
+  .tools img:hover {
+    transform: scale(1.15) rotate(-3deg);
+    background: #e0e7ff;
+  }
 
+  .database h4, .tools h4 {
+    color: #fff;
+    font-size: 1.08rem;
+    margin-right: 1rem;
+    font-weight: 600;
+  }
 .portfolio {
   background: var(--second-bg-color);
 }
@@ -679,3 +710,4 @@ span {
     margin-top: 50px;
   }
 }
+
